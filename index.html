@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/ee2b3a2951.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header data-magellan>
+        <div class="grid-container">
+          <div class="grid-x align-middle">
+            
+            <div class="cell logo small-4">
+              <img src="img/logo.png">
+            </div>
+
+            <div class="cell small-8">
+              <ul class="menu align-right">
+              <li><a href="#features">Hotel Features</a></li>
+              <li><a href="#cafe">Cafe</a></li>
+              <li><a href="#booking">Book Now!</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
+    <section data-magellan id="hero" class="hero">
+      <img src="img/hero.jpg">
+      
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell">
+           <h1>Relax by the Lakeside</h1>
+            <p>Come join us right on the edge of Lake Champlain, in Vermont. Enjoy a quiet and relaxing stay with a beautiful view guaranteed!</p>
+            <a class="button" href="#booking">Book Now!</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+    <section data-magellan-target="features" id="features" class="features">
+      <img src="img/features.jpg">
+      
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <h1>Relax Outside</h1>
+          </div>
+          <div class="cell medium-4 text-center">
+            <img src="img/features1.jpg">
+            <h2>Lakeside Rooms</h2>
+            <p>All of our 15 rooms have immediate access to Lake Champlain, which guarantees you an amazing and unique view.</p>
+          </div>
+
+          <div class="cell medium-4 text-center">
+            <img src="img/features2.jpg">
+            <h2>Hiking Trails</h2>
+            <p>There’s numerous hiking trails within walking distance of Lakeview for you to explore!</p>
+          </div>
+
+          <div class="cell medium-4 text-center">
+            <img src="img/features3.jpg">
+            <h2>Fire Pits</h2>
+            <p>Each room has their own terrace with it’s own personal fire pit and s’mores supplies.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section data-magellan-target="cafe" id="cafe" class="cafe">
+      <img src="img/cafe.jpg">
+ 
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell text-center">
+                 <h1>Dine with Us</h1>
+            <p>We have an on site cafe, open 6am to 10pm. Make sure to come grab a meal before your hike!</p>
+            <a class="button" href="#">Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section data-magellan-target="booking" id="booking" class="booking">
+      <img src="img/booking.jpg">
+     <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell">
+      <h1>Book your Stay</h1>
+      <p> Relax with us on the perfect outdoor vacation!</p>
+
+
+      
+  
+    <!-- datepicker widget -->
+    <table class="table">
+      <thead>
+        <tr class="grid-x">
+          <th class="cell small-6">Check in:
+            <input type="text" class="span2" value="" id="dpd1">
+          </th>
+          <th class="cell small-6">Check out:
+            <input type="text" class="span2" value="" id="dpd2">
+          </th>
+        </tr>
+        <tr class="grid-x">
+          <th class="cell">
+            <input type="submit" class="submit button radius small" value="Check Availability" data-open="confirmation-overlay">
+          </th>
+        </tr>        
+      </thead>
+    </table>
+        </div>
+  </div>
+</div>
+
+  </section>
+
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell small-6">
+          <h3>Contact Us!</h3>
+        <p>12 Lakeview Ave, Burlington VT<br>
+        Phone: (123) 456-7890<br>
+        Lakeview@gmail.com</p>
+        <h3> Sign Up for our Newsletter</h3>
+          <form>
+  <input type="text" id="Your Email" name="Your Email"><br>
+        </form>
+      </div>
+
+      <div class="cell small-6">
+        <h3>Follow Us!</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- overlay window with spans used to show data from datepicker -->
+    <div id="confirmation-overlay" class="reveal" data-reveal>
+      <div class="row">
+        <div class="cell large-7">
+          <div class="overlay">
+            <h1>Room Confirmed</h1>
+            <h2>Your room has been confirmed for <span class="dpd1"></span> to <span class="dpd2"></span>.</h2>
+          </div>
+        </div>
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,117 @@
+
+header {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	background-color: #172517;
+	padding: 1rem 0;
+	font-size: 1.25rem
+
+}
+ .logo img {
+ 	height:7rem;
+ }
+header a {
+	color: #F1ECEB;
+}
+
+header a:hover {
+	color: #BFB2B0;
+}
+
+i {
+	color: #F1ECEB;
+	padding: .5rem;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+h2, p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+h2 {
+	line-height: 2.75rem;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+div {
+	padding: .2rem;
+}
+
+.button {
+	background-color: #F1ECEB;
+	border: .25rem solid #172517;
+	color: #172517;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.button:hover {
+	background-color: #F1ECEB;
+	border: .25rem solid #172517;
+	color: #172517;
+}
+.hero {
+	background-color: #F1ECEB;
+	color: #172517;
+	padding-bottom: .5rem;
+}
+
+.hero .grid-container {
+	padding: 3rem 0;
+}
+
+.features {
+	background-color: #F1ECEB;
+	color: #172517;
+	padding-bottom: .5rem;
+}
+
+.features .grid-container {
+	padding: 3rem 0;
+}
+
+.features .grid-container img {
+	margin-bottom: 1rem;
+}
+
+
+.cafe {
+	background-color: #F1ECEB;
+	color: #172517;
+	padding-bottom: .5rem;
+}
+
+.booking {
+	background-color: #F1ECEB;
+	color: #172517;
+	padding-bottom: .5rem;
+}
+
+thead {
+	background: #F1ECEB;
+}
+
+.reveal {
+	background-color: #172517;
+	color: #F1ECEB;
+}
+
+
+
+footer {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	background-color: #172517;
+	padding: 2px;
+	color: #F1ECEB;
+}
+
